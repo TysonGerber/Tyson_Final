@@ -1,0 +1,419 @@
+/**********************************************************************************
+
+                     MAIN.CSS FILE FOR TYSON MID-TERM
+
+**********************************************************************************/
+
+/**********************************************************************************
+
+  Tag selectors, Classes, ID Tags, and then alphabetiz things.  
+
+**********************************************************************************/
+
+
+
+
+/**********************************************************************************
+
+               ELEMENT EFFECTING FULL WEBSITE
+
+**********************************************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    background-color: white;    
+}
+
+body{
+    background: transparent;    
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+/**********************************************************************************
+
+                     CLASSES
+
+**********************************************************************************/
+.text-align {
+    text-align: center;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.topMarginGoalData{
+    margin-top: 90px;
+}
+
+.topMargin{
+    margin-top: 60px;
+}
+
+.paddingNone{
+    padding: 0;
+}
+
+.paddingBottom{
+    padding-bottom: 10px;
+}
+
+
+/*****************************************************
+
+                     Navbar
+
+*****************************************************/
+
+.navbar {
+    background-color: white;
+    padding: 10px;
+}
+.top-nav{
+    text-decoration: none;
+    color:darkgrey;
+}
+.row {
+    margin-top: 50px;
+    /*padding-top: 50px;*/
+  
+}
+.margin{
+  margin-bottom: 30px;
+}
+
+#marginRight{
+    padding-right: 10px;
+}
+.endBottomMargin{
+    margin-bottom: 50px;
+}
+.endBottomMarginGoal{
+    margin-bottom: 100px;
+}
+
+/*****************************************************
+
+                   Images
+
+*****************************************************/
+
+
+.img-responsive{
+   margin: 0 auto;
+   width: 324;
+   height: 228;
+
+}
+
+
+/**********************************************************************************
+
+                    ID's
+
+**********************************************************************************/
+#topMargin{
+  margin: 65px;
+}
+.nameTopMargin{
+ margin-top: 40px;
+}
+
+
+/**********************************************************************************
+
+                 New Goal Page     newgoal.html
+
+**********************************************************************************/
+
+
+
+/*****************************************************
+
+                   Id
+
+*****************************************************/
+
+
+
+#inputYourGoal{
+  margin-bottom: 80px;
+}
+
+#goal-margin-bottom{
+  margin-bottom: 50px;
+}
+.marginBottom{
+    margin-bottom: 20px;
+}
+
+
+/*****************************************************
+
+                 Classes  
+
+*****************************************************/
+
+.topMarginNewGoal{
+  margin-top: 100px;
+}
+.inputYourGoal{
+  margin-bottom: 150px;
+}
+
+.label{
+  font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: darkgrey;
+    outline: 0;
+}
+.inline-block{
+    display:inline-block;
+}
+
+
+.Ïpaperclip-margin-left{
+  margin-left: 20px
+}
+
+.paper-margin-right{
+  margin-right: 20px;
+}
+.textSize{
+font-size: 100px;
+}
+
+.fontSize{
+    font-size: 100px;
+}
+
+/*****************************************************
+
+            Calendar
+
+*****************************************************/
+HTMLJSCSS
+
+  .datepickerdemoBasicUsage md-content {
+    padding-bottom: 200px;
+   
+
+     }
+     .md-content{
+        background-color: white;
+     }
+     .dateColor{
+       color:darkgrey;
+     }
+
+
+/**********************************************************************************
+
+              END Of New Goal Page     newgoal.html
+
+**********************************************************************************/
+
+
+
+/**********************************************************************************
+
+                  LOGIN/SIGN IN on login.html
+
+**********************************************************************************/
+
+
+.wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+p.form-title
+{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: darkgrey;
+    margin-top: 5%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.formWidth
+{   width: 75%;
+    margin: 0 auto;
+}
+
+form.login input[type="text"], form.login input[type="password"]
+{
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid darkgrey;
+    outline: 0;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: darkgrey;
+    outline: 0;
+}
+
+form.login input[type="submit"]
+{
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+form.login input[type="submit"]:hover
+{
+    transition: background-color 0.5s ease;
+}
+
+form.login .remember-forgot
+{
+    float: left;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+form.login .forgot-pass-content
+{
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form.login label, form.login a
+{
+    font-size: 12px;
+    font-weight: 400;
+    color: darkgrey;
+}
+
+form.login a
+{
+    transition: color 0.5s ease;
+}
+
+form.login a:hover
+{
+    color: purple;
+}
+
+.pr-wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+.show-pass-reset
+{
+    display: block !important;
+}
+
+.pass-reset
+{
+    margin: 0 auto;
+    width: 250px;
+    position: relative;
+    margin-top: 22%;
+    z-index: 999;
+    background: blue;
+    padding: 20px 15px;
+}
+
+.pass-reset label
+{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.pass-reset input[type="email"]
+{
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid yellow;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: green;
+    outline: 0;
+}
+
+.pass-reset input[type="submit"]
+{
+    width: 100%;
+    border: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.pass-reset input[type="submit"]:hover
+{
+    transition: background-color 0.5s ease;
+}
+
+.posted-by
+{
+    position: absolute;
+    bottom: 26px;
+    margin: 0 auto;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 10px;
+    left: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*what is a difference between a join and a left join.   (SOMEONE MIGHT ASK THIS QUESTION IN AN INTERVIEW.)*/ 

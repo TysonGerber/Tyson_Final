@@ -1,0 +1,53 @@
+  <!-- START OF Name Your Goal-->
+        <div class="container-fluid">
+            <p class="form-title"></p>
+            <div class="col-md-12 topMarginGoalData">
+                <form class="login nameTopMargin formWidth">
+                    <input class="text-align" ng-model="dCtrl.name" id="goal-margin-bottom" type="text" placeholder="Name Your Goal" />
+                    <input class="text-align" ng-model="dCtrl.cost" id="goal-margin-bottom" type="text" placeholder="How much does this item cost?" />
+                    <input  class="text-align" ng-model="dCtrl.saved" id="goal-margin-bottom" type="text" placeholder="How much do you have saved?" />
+                        <div class="text-align paperclip-margin-left">
+                        <a class="top-nav" href="#"></a>
+                        <p class="label inline-block"><i class="fa-lg fa fa-paperclip "></i>
+                        <h2 class="inline-block">Attach Picture</h2></p>
+                        <input class="text-align" ng-model="dCtrl.imgUrl"  type="text" placeholder="Image Url" />
+                    </div>
+                    <!--<label id="goal-margin-bottom">When do you want to complete your goal by?</label>-->
+                    <!-- START OF Calendar Picker-->
+
+                    <div class="container col-xs-12">
+                        <div class="row">
+                            <div class="paddingNone">
+                                <h2 class="paddingBottom text-align">When do you want to accomplish your goal?</h2>
+
+                                <div class="text-align" ng-model="dCtrl.myGoal" ng-cloak="" class="datepickerdemoBasicUsage ">
+                                    <md-content class="md-content">
+                                        <div layout-gt-xs="row">
+                                            <div flex-gt-xs="" >
+                                            
+                                                <md-datepicker ng-model="dCtrl.myDate" md-placeholder="Enter date" md-min-date="dCtrl.minDate"></md-datepicker>
+                                            </div>
+                                        </div>
+                                        </md-input-container>
+                                
+             
+                                    </md-content>
+                                    
+                                </div>
+                                <div class="topMargin">
+                                <input ng-click="dCtrl.myGoalSubmit()" type="submit" value="Start Goal" class="btn btn-success btn-sm">
+                                </div>
+                                <div class="endBottomMarginGoal"><span style="opacity: 0">Hello</span></div>
+
+                            </div>
+                        </div>
+                         <!-- END OF Calendar Picker-->
+
+                     
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- END OF Name Your Goal-->

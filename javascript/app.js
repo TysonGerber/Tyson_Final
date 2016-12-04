@@ -1,0 +1,1 @@
+var mainApp = angular.module("ReachIt", ['ngMaterial', 'ngMessages','ngRoute']);

@@ -1,0 +1,38 @@
+<!-- START OF Name Your Goal-->
+<div class="container-fluid">
+    <p class="form-title"></p>
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-12-lg">
+            <form class="login topMarginGoalData formWidth">
+               
+                    <h2 class="text-align" style="margin-bottom:20px">{{dCtrl.myGoals[dCtrl.goalIndex-1].name}}</h2>
+                    <h2 class="text-align" style="margin-bottom:20px">Total cost: {{dCtrl.myGoals[dCtrl.goalIndex-1].cost | currency}}</h2>
+                    <img class="img-responsive" src="{{dCtrl.myGoals[dCtrl.goalIndex-1].img}}">
+
+                    <h2 class="text-align" style="margin-bottom:20px">You currently have {{dCtrl.myGoals[dCtrl.goalIndex-1].saved | currency}} and {{dCtrl.myGoals[dCtrl.goalIndex-1].costLeft | currency}}
+                        left to save!</h2>
+                    <h2 class="text-align" style="margin-bottom:20px">You will hit your goal in {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.years()}} years, {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.months()}}
+                        months, {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.days()}} days!</h2>
+
+
+                    <!--Create New Goal Button-->
+                    <a href="/#/"><button class="btn btn-success btn-block ">Save Goal</button></a>
+
+
+                
+            </form>
+            <div class="endBottomMarginGoal"><span style="opacity: 0">Hello</span></div>
+        </div>
+    </div>
+</div>
+<!-- END OF Calendar Picker-->
+
+
+</div>
+</form>
+
+</div>
+</div>
+</div>
+
+<!-- END OF Name Your Goal-->
