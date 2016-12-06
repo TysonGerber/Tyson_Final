@@ -15,8 +15,17 @@
                    </div>
                     <h2 class="text-align" style="margin-bottom:20px">You currently have {{dCtrl.myGoals[dCtrl.goalIndex-1].saved | currency}} and {{dCtrl.myGoals[dCtrl.goalIndex-1].costLeft | currency}}
                         left to save!</h2>
+              
                     <h2 class="text-align" style="margin-bottom:20px">You will hit your goal in {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.years()}} years, {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.months()}}
                         months, {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.days()}} days!</h2>
+
+
+                        <!-- Need to get Rob's help on this. ask this question then ask how would this work if I wanted to go back into the file and edit the information? -->
+                        <!-- Trying to take total cost left % date ex:   $100 / 30 days = $3.33 you would need to save daily.-->
+
+                    <h2 class="text-align" style="margin-bottom:20px">To achieve your goal you need to save ({{dCtrl.myGoals[dCtrl.goalIndex-1].costLeft | currency}} / {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.years()}} years, {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.months()}}
+                        months, {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.days()}} )
+                        left to save!</h2>
 
 
                     <!--Create New Goal Button-->

@@ -15,11 +15,11 @@
 
 					<!--My Goal Photos Here-->
 					
-					<div ng-repeat="goal in dCtrl.myGoals">
+					<a href="#/myGoals" id="dec-none"><div ng-repeat="goal in dCtrl.myGoals">
 					<img class="img-size" src="{{goal.img}}" alt=" goal image" style="width:304px;height:228px;">
 					<h2>{{goal.name}}: {{goal.costLeft | currency}}</h2>
 					<h2>You will hit your goal in {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.years()}} years, {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.months()}} months, {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.days()}} days!</h2>
-					</div>
+					</div></a>
 					
 
 					
