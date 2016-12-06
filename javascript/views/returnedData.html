@@ -7,8 +7,12 @@
                
                     <h2 class="text-align" style="margin-bottom:20px">{{dCtrl.myGoals[dCtrl.goalIndex-1].name}}</h2>
                     <h2 class="text-align" style="margin-bottom:20px">Total cost: {{dCtrl.myGoals[dCtrl.goalIndex-1].cost | currency}}</h2>
-                    <img class="img-responsive" src="{{dCtrl.myGoals[dCtrl.goalIndex-1].img}}">
-
+                    
+                    <div class="image-container">
+                        <div class="fadeUp"><img class="img-size top-img" ng-src="{{dCtrl.myGoals[dCtrl.goalIndex-1].img}}"></div>
+                        <img class="img-size bottom-img" ng-src="{{dCtrl.myGoals[dCtrl.goalIndex-1].img}}">
+                        
+                   </div>
                     <h2 class="text-align" style="margin-bottom:20px">You currently have {{dCtrl.myGoals[dCtrl.goalIndex-1].saved | currency}} and {{dCtrl.myGoals[dCtrl.goalIndex-1].costLeft | currency}}
                         left to save!</h2>
                     <h2 class="text-align" style="margin-bottom:20px">You will hit your goal in {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.years()}} years, {{dCtrl.myGoals[dCtrl.goalIndex-1].timeLeft.months()}}
