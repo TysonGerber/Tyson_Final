@@ -1,14 +1,14 @@
 mainApp
-    .controller("GoalDataController", dCtrl);
+    .controller("GoalDataController", dCtrl); //setting a name and a function that represents this controller
 console.log('got here')
-
-dCtrl.$inject = ["goalDataFactory", "$location"]
-
-
+//line 5 goalDataFactory refers back to the string name given in the factory definition.
+dCtrl.$inject = ["goalDataFactory", "$location"] //IMPORTANT dCtrl has to match on line 2,5,and10. Line 11 can be different because that is what your naming your scope.
 
 
-function dCtrl(goalDataFactory, $location) {
-    var dCtrl = this;
+
+
+function dCtrl(goalDataFactory, $location) { //in minification it takes parameter names. 
+    var dCtrl = this; // setting dCtrl to be the scope of the controller function.
    // window.dCtrl = dCtrl; // to debug 
 
     dCtrl.goalIndex = 0;
@@ -18,7 +18,7 @@ function dCtrl(goalDataFactory, $location) {
 
     //Name Your Goal Input
 
-    dCtrl.myGoals = goalDataFactory.myGoals
+    dCtrl.myGoals = goalDataFactory.myGoals // I want dCtrl.mygoals to refer back to the FACTORIES version of dCtrl.myGoals
     console.log("goal data factory", goalDataFactory)
 
     dCtrl.myGoalSubmit = function () {
@@ -39,6 +39,8 @@ function dCtrl(goalDataFactory, $location) {
 
         
         console.log("Time left: ", dCtrl.timeLeft);
+    var timeLeft= (dCtrl.myDate - dCtrl.startDate);
+    var leftToSave= (timeLeft  / (1000 / 60 / 60 / 24));
 
         dCtrl.myGoals.push({
 
@@ -83,9 +85,7 @@ function dCtrl(goalDataFactory, $location) {
 }
 
 
-
-
-
+//    var leftToSave =  ((dCtrl.costLeft) / (dCtrl.myGoals.timeLeft.years() + dCtrl.myGoals[.timeLeft.months() + dCtrl.myGoals.timeLeft.days()))
 
 //    function cost(cost,saved) {
 //     var costLeft = cost - saved 
